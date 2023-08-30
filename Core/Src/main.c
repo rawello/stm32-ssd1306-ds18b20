@@ -114,7 +114,6 @@ int main(void)
   SSD1306_GotoXY(10, 10);
   SSD1306_Puts("Temp and Time", &Font_11x18, 1);
   SSD1306_UpdateScreen();
-  HAL_UART_Transmit(&huart1, (uint8_t *)str1, strlen(str1), 0x1000);
 
   /* USER CODE END 2 */
 
